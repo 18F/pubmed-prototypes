@@ -1,0 +1,97 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+  <meta name="description" content="none">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300|Source+Sans+Pro:200,300,300italic,400,400italic,600,600italic,900|Roboto+Condensed" rel="stylesheet">
+
+  <script src="/javascripts/jquery-2.1.4.min.js"></script>
+  <script src="/javascripts/application.js"></script>
+  <script src="/javascripts/tablesaw.stackonly.js"></script>
+  <script src="/javascripts/tablesaw-init.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
+
+  <link rel="canonical" href="/sign-in/">
+  <link rel="alternate" type="application/rss+xml" title="PubMed Labs Prototype" href="/feed.xml" />
+
+
+</head>
+
+<body class="no-js layout-sign-in">
+  <a class="a-skip-to-main" href="#main">Skip to main content</a>
+  <header class="site-header">
+  <div class="wrapper">
+    <h1 class="logo">
+      <a href="/" title="PubMed Labs Home">
+        <span>PubMed Labs</span>
+      </a>
+    </h1>
+    <form action="/labs/pubmed/" method="get" autocomplete="off" class="search-form " id="search-form">
+      <div class="form-field search search-input">
+        <label class="usa-sr-only" for="id_term">
+          Search:
+          <input type="search" name="term" value="otitis media treatment" class="term-input tt-input" required="" id="id_term" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;" aria-owns="id_term_listbox" aria-autocomplete="list">
+        </label>
+      </div>
+      <button type="button" name="button" class="button">Search</button>
+    </form>
+    <a href="#">Show history</a>
+    <a href="#">Show query builder</a>
+  </div>
+</header>
+
+  <main role="main" id="main" class="page">
+    <div class="wrapper">
+      <section class="sign-in">
+        <h1>Sign in</h1>
+        <p>Sign in to manage your claims, check claim status, apply for direct deposit, and more. If you don&rsquo;t have an account, you can create one while <a href="/claims/new">filing a claim</a>.</p>
+        <form action="/claims/your/">
+          <div class="field">
+            <label>
+              <span class="label-text">Email address</span>
+              <input type="email" required>
+            </label>
+          </div>
+          <div class="field">            
+            <label>
+              <span class="label-text">Password</span>
+              <input type="password" required>
+            </label>
+            <a href="#">Forgot?</a>
+          </div>
+          <button>Sign In</button>
+        </form>
+        <p class="note">You may also check the status of a claim by calling us at <a href="tel:5555555555">555-555-5555</a> during our normal business hours, 8:30 am to 4:30 pm, Monday through Friday (excluding holidays).</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+  <div class="wrapper">
+    <nav class="site-footer-nav">
+      <ul>
+        <li><a href="#">Employers</a></li>
+        <li><a href="#">Healthcare providers</a></li>
+        <li><a href="#">Forms and Publications</a></li>
+        <li><a href="#">En Español</a></li>
+      </ul>
+    </nav>
+    <nav class="site-footer-contact">
+      <ul>
+        <li><a href="/contact-us">Contact us</a></li>
+        <li><a href="">Conditions of Use</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Accessibility</a></li>
+        <li><a href="https://github.com/18F/Paid-Leave-Prototype">Contribute to this site</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>

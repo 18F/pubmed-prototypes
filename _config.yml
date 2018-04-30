@@ -1,0 +1,31 @@
+# Site settings
+title: PubMed Labs Prototype
+description: Test
+email:
+permalink: pretty
+author:
+  name: Andrew Maier
+  email: andrew.maier@gsa.gov
+
+github:
+  organization: 18F
+  repository: pubmed-prototypes
+  default_branch: master
+
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- go
+- vendor
+
+baseurl: ''

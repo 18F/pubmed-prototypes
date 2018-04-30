@@ -1,0 +1,18 @@
+[
+  {
+    "key": "information"
+  },
+  {
+    "key": "claimant"
+  },
+  {
+    "key": "employment"
+  },
+  {
+    "key": "dependent"
+  },
+  {
+    "type": "button",
+    "title": "Submit"
+  }
+]
