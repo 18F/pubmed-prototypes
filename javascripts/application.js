@@ -4,7 +4,7 @@ function initBody() {
 
 $(document).ready(function() {
   initBody();
-  
+
   $('input').focus(function(){
     $(this).parents('.field').addClass('is-focused')
   });
@@ -13,4 +13,7 @@ $(document).ready(function() {
     $(this).parents('.field').removeClass('is-focused')
   });
 
+  $('.site-header .action-show-query-builder').click(function(){
+    $('.query-builder').toggleClass('is-active');
+  });
 });

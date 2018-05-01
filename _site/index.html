@@ -8,12 +8,10 @@
 
   <meta name="description" content="none">
 
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300|Source+Sans+Pro:200,300,300italic,400,400italic,600,600italic,900|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
 
   <script src="/javascripts/jquery-2.1.4.min.js"></script>
   <script src="/javascripts/application.js"></script>
-  <script src="/javascripts/tablesaw.stackonly.js"></script>
-  <script src="/javascripts/tablesaw-init.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
@@ -36,14 +34,16 @@
     <form action="/labs/pubmed/" method="get" autocomplete="off" class="search-form " id="search-form">
       <div class="form-field search search-input">
         <label class="usa-sr-only" for="id_term">
-          Search:
+          <span class="label-text">Search:</span>
           <input type="search" name="term" value="otitis media treatment" class="term-input tt-input" required="" id="id_term" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;" aria-owns="id_term_listbox" aria-autocomplete="list">
         </label>
       </div>
       <button type="button" name="button" class="button">Search</button>
     </form>
-    <a href="#">Show history</a>
-    <a href="#">Show query builder</a>
+    <div class="actions actions-search-actions">
+      <a href="#" class="action action-show-history">Show history</a>
+      <a href="#" class="action action-show-query-builder">Show query builder</a>      
+    </div>
     <section class="query-builder">
       <h1>Query builder</h1>
       <form class="" action="index.html" method="post">
@@ -214,12 +214,11 @@
 
   <main role="main" id="main">
     <section class="overview">
-      <div class="inner-wrap">
+
+      <div class="wrapper">
+        <img src="images/sidebar.png" alt="">
         <div class="search-results-chunks">
           <div class="search-results-chunk" data-next-page-url="/labs/pubmed/more/?term=otitis+media+treatment&amp;page=2" data-page-number="1" data-results-amount="17,692" data-pages-amount="1770">
-            <div class="title first">
-              <span class="text">Page 1</span>
-            </div>
             <article class="labs-full-docsum">
               <div class="docsum-content">
                 <a class="labs-docsum-title" href="/labs/pubmed/24134083/?from_term=otitis+media+treatment&amp;from_pos=1" ref="linksrc=docsum_link&amp;article_id=24134083&amp;ordinalpos=0&amp;page=1">

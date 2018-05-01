@@ -51,7 +51,7 @@ body {
     color: #333;
 }
 a {
-    color: #005b9d;
+    color: #0071bc;
     text-decoration: underline;
 }
 a:hover {
@@ -99,7 +99,7 @@ a:visited {
 
 .wrapper {
     width: 95%;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     position: relative;
 }
@@ -713,8 +713,7 @@ textarea {
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
     padding: 4px 8px;
-    border: 1px solid #bbb;
-    border-radius: 3px;
+    border: 1px solid #aaa;
     line-height: 32px;
     min-height: 38px;
     min-width: 4em;
@@ -978,29 +977,35 @@ fieldset.fieldset-radio.is-error .error-text {
 	border-bottom-color: #b3b3b3;
 	border-right-color: #bbb;
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-	position: fixed;
-	top: 100px;
-	left: 33%;
+	position: absolute;
+	top: 80px;
+	right: 100px;
+	z-index: 1;
+	display: none;
 }
 
-.query-builder h1{
-	font-weight: 600;
-	margin-bottom: 0.67em; 
+.query-builder.is-active { 
+display: block;
 }
 
 .query-builder::before,
 .query-builder::after{
   content: "";
-  border: 1em solid transparent;
+  border: 12px solid transparent;
   border-bottom-color: #aaa;
   position: absolute;
   bottom: 100%;
-  left: 1em; 
+  left: 125px; 
 }
 
 .query-builder::after {
 	border-bottom-color: white;
 	margin-bottom: -1px;
+}
+
+.query-builder h1{
+	font-weight: 600;
+	margin-bottom: 0.67em; 
 }
 
 .query-builder .field-any-all{
@@ -1014,6 +1019,7 @@ fieldset.fieldset-radio.is-error .error-text {
 	padding-bottom: 2px;
 	min-height: auto;
 	font-size: 0.85em;
+	font-weight: 600;
 }
 
 .query-builder .field-any-all::after{
@@ -1096,21 +1102,23 @@ margin: 0;
   margin-top: 0.4em;
   margin-right: 0.2em;
 }
+
 .action .icon{
-		display: inline-block;
-		vertical-align: middle;
-	margin-top: -2px;
-	margin-right: 0.3em;
-		width: 1.67em;
-		height: 1.67em;
-		border-radius: 100%;
-		background: #555;
-		color: white;
-		font-size: 0.6em;
-	line-height: 1.4em;
-	text-align: center;
-		padding: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 0.3em;
+  width: 1.67em;
+  height: 1.67em;
+  border-radius: 100%;
+  background: #555;
+  color: white;
+  font-size: 0.6em;
+  line-height: 1.4em;
+  text-align: center;
+  padding: 0.2em;
 }
+
 
 .action .icon:hover{
 	background: #333;
@@ -1143,4 +1151,116 @@ margin: 0;
         font-size: 12px;
     }
 }
+/* @end */
+
+/* @group .labs-full-docsum */
+
+.labs-full-docsum{
+  margin-bottom: 1.4em;
+  font-size: 15px;
+}
+.labs-full-docsum a{ text-decoration: none; }
+.labs-full-docsum .labs-docsum-title{
+	font-size: 18px;
+	line-height: 1.2;
+	margin-bottom: 0.3em;
+	display: block;
+}
+.labs-full-docsum .labs-docsum-citation{
+	color: #006b00;
+	margin-bottom: 0.5em;
+}
+
+.labs-full-docsum .labs-docsum-snippet{
+	line-height: 1.4em;
+}
+
+/* @end */
+
+/* @group .site-header */
+
+.site-header{
+  background: #f1f1f1;
+  padding: 1em 0 1em;
+}
+.site-header .wrapper{
+	padding-left: 220px;
+}
+
+.site-header .logo a{
+	width: 220px;
+	height: 64px;
+  background: url(images/svg/pubmed-logo.svg) no-repeat left/contain;
+  position: absolute;
+  top: -0.5em;
+  left: -4px;
+}
+.site-header .logo a span{
+  text-indent: -9999em;
+  display: inline-block;
+}
+
+.site-header .search-form{
+	padding-right: 5em;
+	width: 640px;
+	position: relative;
+	margin-right: 0.4em;
+	margin-bottom: 0.2em;
+}
+.site-header .search-form label .label-text{
+	position: absolute;
+	left: -9999em;
+}
+
+.site-header .search-form input{
+  padding: 0.5em 0;
+  width: 100%;
+  border-right: none;
+  text-indent: 0.2em;
+}
+
+.site-header .search-form button{
+	background: #1072ba;
+	color: white;
+	border-radius: 0;
+	font-weight: 600;
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	width: 5em;
+}
+
+
+.site-header .actions-search-actions{
+  font-size: 14px;
+  clear: both;
+}
+
+.site-header .actions-search-actions .action{
+	margin-right: 0.8em;
+	color: #555;
+}
+
+/* @end */
+
+/* @group .search-results-chunks */
+
+.search-results-chunks{
+  padding-left: 220px;
+  padding-right: 180px;
+}
+
+
+/* @end */
+
+/* @group .layout-home */
+
+.layout-home main img{
+  float: left;
+  margin-top: 6px;
+}
+
 /* @end */

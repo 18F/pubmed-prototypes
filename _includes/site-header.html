@@ -8,14 +8,16 @@
     <form action="/labs/pubmed/" method="get" autocomplete="off" class="search-form " id="search-form">
       <div class="form-field search search-input">
         <label class="usa-sr-only" for="id_term">
-          Search:
+          <span class="label-text">Search:</span>
           <input type="search" name="term" value="otitis media treatment" class="term-input tt-input" required="" id="id_term" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;" aria-owns="id_term_listbox" aria-autocomplete="list">
         </label>
       </div>
       <button type="button" name="button" class="button">Search</button>
     </form>
-    <a href="#">Show history</a>
-    <a href="#">Show query builder</a>
+    <div class="actions actions-search-actions">
+      <a href="#" class="action action-show-history">Show history</a>
+      <a href="#" class="action action-show-query-builder">Show query builder</a>      
+    </div>
     <section class="query-builder">
       <h1>Query builder</h1>
       <form class="" action="index.html" method="post">
